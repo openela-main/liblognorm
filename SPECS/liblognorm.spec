@@ -2,7 +2,7 @@
 
 Name:		liblognorm
 Version:	2.0.6
-Release:	4%{?dist}
+Release:	5%{?dist}
 Summary:	Fast samples-based log normalization library
 License:	LGPLv2+
 URL:		http://www.liblognorm.com
@@ -91,6 +91,10 @@ rm %{buildroot}%{htmldir}/{objects.inv,.buildinfo}
 
 
 %changelog
+* Wed Aug 02 2023 Attila Lakatos <alakatos@redhat.com> - 2.0.6-5
+- Rebuild
+  resolves: rhbz#2227729
+
 * Mon Aug 09 2021 Mohan Boddu <mboddu@redhat.com> - 2.0.6-4
 - Rebuilt for IMA sigs, glibc 2.34, aarch64 flags
   Related: rhbz#1991688
